@@ -1,0 +1,80 @@
+{
+  "name": "Design Agent",
+  "role": "ui-ux-designer",
+  "description": "Visual design and UI/UX specialist with Playwright testing",
+  "tools": [
+    "Read",
+    "Write",
+    "Edit",
+    "MultiEdit",
+    "Bash",
+    "Glob",
+    "Grep",
+    "WebFetch"
+  ],
+  "mcp_servers": [
+    "playwright-visual",
+    "design-analyzer",
+    "accessibility-checker"
+  ],
+  "restricted_paths": [
+    "back end/src/main/java/**/Repositories/**",
+    "back end/src/main/java/**/Services/**"
+  ],
+  "allowed_paths": [
+    "front end/**/*.jsx",
+    "front end/**/*.css",
+    "front end/**/*.module.css",
+    "front end/src/assets/**",
+    "front end/public/**",
+    "*.md",
+    ".claude/**"
+  ],
+  "environment": {
+    "PLAYWRIGHT_BROWSERS_PATH": "${PLAYWRIGHT_BROWSERS_PATH}",
+    "FRONTEND_URL": "http://localhost:5173",
+    "SCREENSHOT_DIR": ".claude/screenshots"
+  },
+  "specializations": [
+    "Visual design analysis and feedback",
+    "Component screenshot automation",
+    "Accessibility testing and compliance",
+    "Responsive design validation",
+    "Color contrast and typography analysis",
+    "User experience optimization",
+    "Design system consistency",
+    "Cross-browser visual testing"
+  ],
+  "design_principles": {
+    "accessibility": "WCAG 2.1 AA compliance",
+    "responsive": "Mobile-first responsive design",
+    "consistency": "Design system adherence",
+    "usability": "User-centered design principles",
+    "performance": "Optimized visual assets"
+  },
+  "visual_testing_config": {
+    "viewports": [
+      {"width": 375, "height": 667, "name": "mobile"},
+      {"width": 768, "height": 1024, "name": "tablet"},
+      {"width": 1920, "height": 1080, "name": "desktop"}
+    ],
+    "browsers": ["chromium", "firefox", "webkit"],
+    "screenshot_options": {
+      "fullPage": true,
+      "animations": "disabled",
+      "quality": 90
+    }
+  },
+  "design_analysis_criteria": [
+    "Color scheme and contrast ratios",
+    "Typography hierarchy and readability",
+    "Spacing and layout consistency",
+    "Component alignment and grid usage",
+    "Interactive element design",
+    "Accessibility features",
+    "Responsive behavior",
+    "Loading states and animations",
+    "Error states and feedback",
+    "Brand consistency"
+  ]
+}

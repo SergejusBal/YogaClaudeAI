@@ -1,0 +1,21 @@
+{
+  "name": "mysql-connector",
+  "description": "MySQL database connection and query execution MCP server",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/mysql-connector.js"],
+  "env": {
+    "MYSQL_HOST": "localhost",
+    "MYSQL_PORT": "3306",
+    "MYSQL_DATABASE": "diet_fitness_mysql",
+    "MYSQL_USER": "${MYSQL_USER}",
+    "MYSQL_PASSWORD": "${MYSQL_PASSWORD}"
+  },
+  "capabilities": [
+    "execute_query",
+    "get_schema",
+    "analyze_performance",
+    "manage_connections"
+  ],
+  "used_by": ["backend-agent", "database-agent"]
+}

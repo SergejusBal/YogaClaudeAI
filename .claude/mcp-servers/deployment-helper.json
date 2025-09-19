@@ -1,0 +1,19 @@
+{
+  "name": "deployment-helper",
+  "description": "Deployment automation and infrastructure management",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/deployment-helper.js"],
+  "env": {
+    "DOCKER_HOST": "unix:///var/run/docker.sock",
+    "GITHUB_REPOSITORY": "SergejusBal/DietClaudeAI"
+  },
+  "capabilities": [
+    "docker_management",
+    "ci_cd_pipeline",
+    "environment_config",
+    "monitoring_setup",
+    "backup_automation"
+  ],
+  "used_by": ["devops-agent"]
+}

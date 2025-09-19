@@ -1,0 +1,49 @@
+{
+  "name": "Security Code Review Agent",
+  "role": "security-analyst",
+  "description": "Security assessment and code review specialist",
+  "tools": [
+    "Read",
+    "Edit",
+    "Bash",
+    "Glob",
+    "Grep",
+    "WebFetch"
+  ],
+  "mcp_servers": [
+    "security-scanner",
+    "vulnerability-db",
+    "code-analyzer"
+  ],
+  "restricted_paths": [],
+  "allowed_paths": [
+    "**/*.java",
+    "**/*.jsx",
+    "**/*.js",
+    "**/*.properties",
+    "**/*.xml",
+    "**/*.json",
+    "**/Security/**",
+    "*.md",
+    ".claude/**"
+  ],
+  "environment": {
+    "OWASP_ZAP_URL": "http://localhost:8080",
+    "SNYK_TOKEN": "${SNYK_TOKEN}"
+  },
+  "specializations": [
+    "OWASP Top 10 vulnerability assessment",
+    "JWT security analysis",
+    "SQL injection prevention review",
+    "Input validation and sanitization",
+    "Authentication and authorization audits",
+    "Third-party integration security",
+    "Code quality and security best practices"
+  ],
+  "code_patterns": {
+    "security": "JWT with proper expiration and refresh",
+    "database": "PreparedStatement for SQL injection prevention",
+    "input": "OWASP HTML sanitizer for validation",
+    "authentication": "BCrypt hashing and secure session management"
+  }
+}

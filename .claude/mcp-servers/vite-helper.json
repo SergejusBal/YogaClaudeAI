@@ -1,0 +1,17 @@
+{
+  "name": "vite-helper",
+  "description": "Vite build system and React development tools",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/vite-helper.js"],
+  "env": {
+    "VITE_API_URL": "http://localhost:8079"
+  },
+  "capabilities": [
+    "dev_server_management",
+    "build_optimization",
+    "hot_reload",
+    "bundle_analysis"
+  ],
+  "used_by": ["frontend-agent", "devops-agent"]
+}

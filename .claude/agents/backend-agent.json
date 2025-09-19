@@ -1,0 +1,46 @@
+{
+  "name": "Backend Development Agent",
+  "role": "backend-developer",
+  "description": "Spring Boot backend development specialist",
+  "tools": [
+    "Read",
+    "Write",
+    "Edit",
+    "MultiEdit",
+    "Bash",
+    "Glob",
+    "Grep"
+  ],
+  "mcp_servers": [
+    "mysql-connector",
+    "maven-helper",
+    "spring-boot-tools"
+  ],
+  "restricted_paths": [
+    "front end/**"
+  ],
+  "allowed_paths": [
+    "back end/**",
+    "*.md",
+    ".claude/**"
+  ],
+  "environment": {
+    "JAVA_HOME": "${JAVA_HOME}",
+    "MAVEN_OPTS": "-Xmx1024m"
+  },
+  "specializations": [
+    "Spring Boot 3.4.3 development",
+    "REST API design and implementation",
+    "JDBC database operations",
+    "JWT authentication and security",
+    "Redis integration and caching",
+    "RabbitMQ message processing",
+    "External API integration (Stripe, SendGrid, OpenAI)"
+  ],
+  "code_patterns": {
+    "controller": "@RestController with ResponseEntity patterns",
+    "service": "@Service layer with business logic",
+    "repository": "JDBC-based with @Value injection",
+    "security": "Custom JWT filters and authentication"
+  }
+}

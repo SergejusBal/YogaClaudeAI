@@ -1,0 +1,46 @@
+{
+  "name": "Frontend Development Agent",
+  "role": "frontend-developer",
+  "description": "React frontend development specialist",
+  "tools": [
+    "Read",
+    "Write",
+    "Edit",
+    "MultiEdit",
+    "Bash",
+    "Glob",
+    "Grep"
+  ],
+  "mcp_servers": [
+    "node-tools",
+    "vite-helper",
+    "react-dev-tools"
+  ],
+  "restricted_paths": [
+    "back end/**"
+  ],
+  "allowed_paths": [
+    "front end/**",
+    "*.md",
+    ".claude/**"
+  ],
+  "environment": {
+    "NODE_ENV": "development",
+    "VITE_API_URL": "http://localhost:8079"
+  },
+  "specializations": [
+    "React 19 component development",
+    "React Router navigation",
+    "CSS Modules and responsive design",
+    "Health calculator components",
+    "JWT authentication flows",
+    "API integration and state management",
+    "Vite build optimization"
+  ],
+  "code_patterns": {
+    "components": "PascalCase with .jsx extension",
+    "styles": "CSS Modules with kebab-case classes",
+    "hooks": "Custom hooks with use prefix",
+    "api": "Centralized in js/utils/APIcoms.js"
+  }
+}

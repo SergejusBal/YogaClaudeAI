@@ -1,0 +1,19 @@
+{
+  "name": "security-scanner",
+  "description": "Security vulnerability scanning and code analysis",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/security-scanner.js"],
+  "env": {
+    "OWASP_ZAP_URL": "http://localhost:8080",
+    "SNYK_TOKEN": "${SNYK_TOKEN}"
+  },
+  "capabilities": [
+    "vulnerability_scan",
+    "dependency_audit",
+    "code_security_analysis",
+    "jwt_validation",
+    "sql_injection_detection"
+  ],
+  "used_by": ["security-agent", "testing-agent"]
+}

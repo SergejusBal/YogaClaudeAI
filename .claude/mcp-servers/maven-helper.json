@@ -1,0 +1,18 @@
+{
+  "name": "maven-helper",
+  "description": "Maven project management and Spring Boot utilities",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/maven-helper.js"],
+  "env": {
+    "JAVA_HOME": "${JAVA_HOME}",
+    "MAVEN_OPTS": "-Xmx1024m"
+  },
+  "capabilities": [
+    "run_maven_commands",
+    "analyze_dependencies",
+    "spring_boot_management",
+    "compile_and_test"
+  ],
+  "used_by": ["backend-agent", "testing-agent"]
+}

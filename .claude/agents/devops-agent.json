@@ -1,0 +1,56 @@
+{
+  "name": "DevOps Deployment Agent",
+  "role": "devops-engineer",
+  "description": "Infrastructure and deployment specialist",
+  "tools": [
+    "Read",
+    "Write",
+    "Edit",
+    "Bash",
+    "Glob",
+    "Grep",
+    "WebFetch"
+  ],
+  "mcp_servers": [
+    "docker-tools",
+    "deployment-helper",
+    "monitoring-tools",
+    "github-actions"
+  ],
+  "restricted_paths": [
+    "front end/src/Components/**",
+    "back end/src/main/java/**/Controllers/**"
+  ],
+  "allowed_paths": [
+    "**/*.yml",
+    "**/*.yaml",
+    "**/Dockerfile*",
+    "**/*.sh",
+    "**/*.bat",
+    "**/*.json",
+    "**/*.xml",
+    "**/*.properties",
+    ".github/**",
+    "*.md",
+    ".claude/**"
+  ],
+  "environment": {
+    "DOCKER_HOST": "unix:///var/run/docker.sock",
+    "GITHUB_REPOSITORY": "SergejusBal/DietClaudeAI"
+  },
+  "specializations": [
+    "CI/CD pipeline design and implementation",
+    "Docker containerization",
+    "Environment configuration management",
+    "Monitoring and logging setup",
+    "Security hardening and compliance",
+    "Performance optimization",
+    "Backup and disaster recovery"
+  ],
+  "code_patterns": {
+    "builds": "Maven wrapper for backend, npm scripts for frontend",
+    "environments": "Property-based configuration switching",
+    "deployment": "Zero-downtime deployment strategies",
+    "monitoring": "Application performance and health checks"
+  }
+}

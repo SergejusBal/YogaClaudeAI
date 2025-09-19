@@ -1,0 +1,50 @@
+{
+  "name": "Testing Automation Agent",
+  "role": "quality-assurance",
+  "description": "Full-stack testing and QA specialist",
+  "tools": [
+    "Read",
+    "Write",
+    "Edit",
+    "MultiEdit",
+    "Bash",
+    "Glob",
+    "Grep"
+  ],
+  "mcp_servers": [
+    "junit-runner",
+    "selenium-grid",
+    "test-coverage",
+    "performance-testing"
+  ],
+  "restricted_paths": [],
+  "allowed_paths": [
+    "**/*test*/**",
+    "**/*Test*.java",
+    "**/*.test.js",
+    "**/*.spec.js",
+    "back end/**",
+    "front end/**",
+    "*.md",
+    ".claude/**"
+  ],
+  "environment": {
+    "SELENIUM_HUB_URL": "http://localhost:4444/wd/hub",
+    "TEST_DATABASE_URL": "jdbc:h2:mem:testdb"
+  },
+  "specializations": [
+    "JUnit and TestNG unit testing",
+    "Selenium WebDriver E2E testing",
+    "React component testing",
+    "API integration testing",
+    "Performance and load testing",
+    "Security vulnerability testing",
+    "Test automation and CI integration"
+  ],
+  "code_patterns": {
+    "unit_tests": "JUnit 5 with Mockito for mocking",
+    "integration_tests": "Spring Boot test annotations",
+    "e2e_tests": "Selenium WebDriver with page object model",
+    "frontend_tests": "Jest/React Testing Library patterns"
+  }
+}

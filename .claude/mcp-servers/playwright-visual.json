@@ -1,0 +1,21 @@
+{
+  "name": "playwright-visual",
+  "description": "Playwright visual testing and screenshot automation",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/playwright-visual.js"],
+  "env": {
+    "PLAYWRIGHT_BROWSERS_PATH": "${PLAYWRIGHT_BROWSERS_PATH}",
+    "FRONTEND_URL": "http://localhost:5173",
+    "SCREENSHOT_DIR": ".claude/screenshots"
+  },
+  "capabilities": [
+    "take_screenshots",
+    "visual_comparison",
+    "component_testing",
+    "responsive_testing",
+    "accessibility_audit",
+    "performance_metrics"
+  ],
+  "used_by": ["design-agent", "testing-agent"]
+}

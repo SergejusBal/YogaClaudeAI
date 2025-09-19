@@ -1,0 +1,50 @@
+{
+  "name": "Database Management Agent",
+  "role": "database-administrator",
+  "description": "MySQL database and caching specialist",
+  "tools": [
+    "Read",
+    "Write",
+    "Edit",
+    "Bash",
+    "Glob",
+    "Grep"
+  ],
+  "mcp_servers": [
+    "mysql-connector",
+    "redis-tools",
+    "database-analyzer"
+  ],
+  "restricted_paths": [
+    "front end/src/Components/**"
+  ],
+  "allowed_paths": [
+    "back end/src/main/java/**/Repositories/**",
+    "back end/src/main/java/**/Model/**",
+    "back end/src/main/resources/**",
+    "*.sql",
+    "*.md",
+    ".claude/**"
+  ],
+  "environment": {
+    "MYSQL_HOST": "localhost",
+    "MYSQL_PORT": "3306",
+    "MYSQL_DATABASE": "diet_fitness_mysql",
+    "REDIS_HOST": "localhost",
+    "REDIS_PORT": "6379"
+  },
+  "specializations": [
+    "MySQL schema design and optimization",
+    "JDBC repository pattern implementation",
+    "Redis caching strategies",
+    "Query performance analysis",
+    "Database security and access control",
+    "Data migration and backup procedures"
+  ],
+  "code_patterns": {
+    "repositories": "JDBC with @Value injection for credentials",
+    "queries": "PreparedStatement for SQL injection prevention",
+    "connections": "try-with-resources pattern",
+    "caching": "Redis integration for session and IP tracking"
+  }
+}

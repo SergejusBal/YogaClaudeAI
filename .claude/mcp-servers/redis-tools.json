@@ -1,0 +1,19 @@
+{
+  "name": "redis-tools",
+  "description": "Redis caching and session management tools",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/redis-tools.js"],
+  "env": {
+    "REDIS_HOST": "localhost",
+    "REDIS_PORT": "6379",
+    "REDIS_PASSWORD": "${REDIS_PASSWORD}"
+  },
+  "capabilities": [
+    "cache_operations",
+    "session_management",
+    "ip_tracking",
+    "performance_monitoring"
+  ],
+  "used_by": ["backend-agent", "database-agent"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "accessibility-checker",
+  "description": "Web accessibility testing and WCAG compliance checking",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/accessibility-checker.js"],
+  "env": {
+    "FRONTEND_URL": "http://localhost:5173",
+    "WCAG_LEVEL": "AA"
+  },
+  "capabilities": [
+    "accessibility_audit",
+    "color_contrast_check",
+    "keyboard_navigation_test",
+    "screen_reader_compatibility",
+    "wcag_compliance_report"
+  ],
+  "used_by": ["design-agent", "testing-agent"]
+}

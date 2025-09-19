@@ -1,0 +1,18 @@
+{
+  "name": "node-tools",
+  "description": "Node.js and npm project management tools",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/node-tools.js"],
+  "env": {
+    "NODE_ENV": "development",
+    "NPM_CONFIG_CACHE": ".npm-cache"
+  },
+  "capabilities": [
+    "run_npm_scripts",
+    "manage_dependencies",
+    "analyze_bundle",
+    "development_server"
+  ],
+  "used_by": ["frontend-agent", "testing-agent"]
+}

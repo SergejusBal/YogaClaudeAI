@@ -1,0 +1,17 @@
+{
+  "name": "junit-runner",
+  "description": "JUnit and TestNG test execution and reporting",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/junit-runner.js"],
+  "env": {
+    "TEST_DATABASE_URL": "jdbc:h2:mem:testdb"
+  },
+  "capabilities": [
+    "run_unit_tests",
+    "generate_reports",
+    "mock_management",
+    "coverage_analysis"
+  ],
+  "used_by": ["testing-agent", "backend-agent"]
+}

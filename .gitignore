@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+target/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Build directories
+build/
+dist/
+
+# Java compiled files
+*.class
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# Spring Boot
+application-local.properties
+
+# Database
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp

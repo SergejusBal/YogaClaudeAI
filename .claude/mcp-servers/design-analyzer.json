@@ -1,0 +1,20 @@
+{
+  "name": "design-analyzer",
+  "description": "Design analysis and UI/UX feedback generation",
+  "type": "stdio",
+  "command": "node",
+  "args": [".claude/mcp-servers/design-analyzer.js"],
+  "env": {
+    "SCREENSHOT_DIR": ".claude/screenshots",
+    "DESIGN_GUIDELINES": ".claude/design-system.json"
+  },
+  "capabilities": [
+    "analyze_screenshots",
+    "color_analysis",
+    "typography_review",
+    "layout_assessment",
+    "design_feedback",
+    "component_recommendations"
+  ],
+  "used_by": ["design-agent"]
+}
