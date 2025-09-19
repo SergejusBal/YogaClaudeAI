@@ -1,0 +1,62 @@
+Kids Yoga Website Colors
+==========================
+
+Primary brand color
+- #4FB6B2 (soft teal) → brand identity, highlights, section headers
+
+Secondary highlight
+- #FFD166 (sunshine yellow) → cheerful accents, hover states, secondary buttons
+
+Accent color
+- #EF6F51 (coral) → warm pop for section dividers, icons, badges
+
+Backgrounds
+- Page background: #FDFBF7 (warm off-white)
+- Panels: #F7F4EF
+- Cards: #F2EFEA
+- Borders/dividers: #E7E3DE
+
+Text
+- Main: #333333 (charcoal gray)
+- Secondary: #666666 (muted gray)
+
+Extra playful pops (for kids’ icons/badges)
+- Mint green: #A8E6CF
+- Sky blue: #87CEFA
+- Fresh green: #7ED957
+- Warm pink: #FF6F91
+
+--------------------------
+
+Tints & Shades
+
+Teal scale
+- Light: #BDE7E4
+- Main: #4FB6B2
+- Dark button: #2E7E7B (✓ white text contrast)
+
+Yellow scale
+- Light: #FFE7AE
+- Main: #FFD166
+- Darker: #E3B04F
+
+Coral scale
+- Light: #FFC3B7
+- Main: #EF6F51
+- Dark: #A74D38 (✓ white text contrast)
+
+--------------------------
+
+Usage Guide
+- Headers / Links: #2E7E7B (dark teal)
+- Primary Button: fill #2E7E7B → text #FFFFFF
+- Secondary Button: fill #FFD166 → text #333333
+- Accents / Dividers: #EF6F51 (coral)
+- Cards / Panels: background #F7F4EF with border #E7E3DE
+
+--------------------------
+
+Gradients (for hero/sections)
+- Teal → Mint: #4FB6B2 → #A8E6CF
+- Peach Calm: #FFE7AE → #FFDAD2
+- Sky Calm (Calm Corner): #B3E5FC → #E1F5FE

@@ -17,8 +17,8 @@ function App() {
 
   return (
     <Providers>
-      <SignInPopUP></SignInPopUP>
-      <NavigationBar></NavigationBar>  
+      {/* <SignInPopUP></SignInPopUP> */}
+      <NavigationBar></NavigationBar>
       <Confirm></Confirm>
 
       <Routes>

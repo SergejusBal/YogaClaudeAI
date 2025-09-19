@@ -129,6 +129,32 @@ npm run preview
 - Cookie-based token storage system ready
 - Environment-based URL configuration in `config.js`
 
+## Design System
+
+### Colors
+The yoga website uses a child-friendly, calming color palette defined in `.claude/colors.txt`. Key colors include:
+
+**Primary Colors:**
+- **Brand Teal**: `#4FB6B2` - Primary brand color for headers, links, buttons
+- **Sunshine Yellow**: `#FFD166` - Cheerful accents, hover states, secondary buttons
+- **Coral**: `#EF6F51` - Warm accents for dividers, icons, badges
+
+**Backgrounds:**
+- **Page**: `#FDFBF7` (warm off-white)
+- **Panels**: `#F7F4EF`
+- **Cards**: `#F2EFEA`
+- **Borders**: `#E7E3DE`
+
+**Text:**
+- **Main**: `#333333` (charcoal gray)
+- **Secondary**: `#666666` (muted gray)
+
+**Usage Guidelines:**
+- Headers/Links: `#2E7E7B` (dark teal)
+- Primary Buttons: Background `#2E7E7B`, Text `#FFFFFF`
+- Secondary Buttons: Background `#FFD166`, Text `#333333`
+- When modifying colors, always update both the code AND `.claude/colors.txt`
+
 ## Code Style Guidelines
 
 ### Frontend React/JS Conventions

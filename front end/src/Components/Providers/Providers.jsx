@@ -4,13 +4,13 @@ import { ConfirmProvider } from "./ConfirmProvider";
 
 
 export default function Providers({ children }) {
-  return ( 
-    <AuthProvider>
-        <SignInProvider>
+  return (
+    // <AuthProvider>
+    //   <SignInProvider>
           <ConfirmProvider>
-              {children}  
-          </ConfirmProvider>            
-        </SignInProvider>        
-    </AuthProvider> 
+              {children}
+          </ConfirmProvider>
+    //   </SignInProvider>
+    // </AuthProvider>
   );
 }

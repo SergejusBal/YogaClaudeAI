@@ -1,26 +1,26 @@
 import styles from "./NavigationBar.module.css";
 import { Link } from "react-router-dom";
-import { deleteCookie } from "../js/utils/cookies";
+// import { deleteCookie } from "../js/utils/cookies";
 
-import { useAuth } from "./Providers/AuthProvider";
-import { useSignIn } from "./Providers/SignInProvider";
+// import { useAuth } from "./Providers/AuthProvider";
+// import { useSignIn } from "./Providers/SignInProvider";
 
 ////////////////////////////////// Component ////////////////////////////////////
 
 function NavigationBar() {
-  const { user, setUser } = useAuth();
-  const { showSignIn } = useSignIn();
-    
-  function handleOpenSignIn() {
-    if(user.role === "GUEST"){
-        showSignIn();
-    } else {
-      setUser({userUUID:"Guest", role: "GUEST"});
-        deleteCookie("JWToken");
-        deleteCookie("username");
-    }   
-    
-  }
+  // const { user, setUser } = useAuth();
+  // const { showSignIn } = useSignIn();
+
+  // function handleOpenSignIn() {
+  //   if(user.role === "GUEST"){
+  //       showSignIn();
+  //   } else {
+  //     setUser({userUUID:"Guest", role: "GUEST"});
+  //       deleteCookie("JWToken");
+  //       deleteCookie("username");
+  //   }
+
+  // }
   
   return (       
     <div className={styles["nav-div"]}>
