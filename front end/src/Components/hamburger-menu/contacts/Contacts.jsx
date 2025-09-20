@@ -1,0 +1,106 @@
+import styles from "./Contacts.module.css";
+
+function Contacts() {
+  return (
+    <div className={styles["contacts-container"]}>
+      <div className={styles["header-section"]}>
+        <h1>Kontaktai</h1>
+      </div>
+
+      <div className={styles["main-content"]}>
+        <div className={styles["contact-info-section"]}>
+          <div className={styles["contact-details"]}>
+            <div className={styles["contact-item"]}>
+              <div className={styles["contact-icon"]}>
+                <svg viewBox="0 0 24 24" className={styles["icon-svg"]}>
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <div className={styles["contact-content"]}>
+                <h3>Skambinkite mums!</h3>
+                <a href="tel:+37000000000" className={styles["contact-link"]}>
+                  +370 000 00000
+                </a>
+              </div>
+            </div>
+
+            <div className={styles["contact-item"]}>
+              <div className={styles["contact-icon"]}>
+                <svg viewBox="0 0 24 24" className={styles["icon-svg"]}>
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </div>
+              <div className={styles["contact-content"]}>
+                <h3>Rašykite mums!</h3>
+                <a href="mailto:info@jogavaikams.lt" className={styles["contact-link"]}>
+                  info@jogavaikams.lt
+                </a>
+              </div>
+            </div>
+
+            <div className={styles["contact-item"]}>
+              <div className={styles["contact-icon"]}
+                   onClick={() => navigator.clipboard?.writeText('Jogos gatvė 123, 01234 Vilnius, Lietuva')}
+                   title="Kopijuoti adresą">
+                <svg viewBox="0 0 24 24" className={styles["icon-svg"]}>
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <div className={styles["contact-content"]}>
+                <h3>Aplankykite mus!</h3>
+                <div className={styles["address-text"]}>
+                  <p>Jogos gatvė 123</p>
+                  <p>01234 Vilnius</p>
+                  <p>Lietuva</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles["contact-item"]}>
+              <div className={styles["contact-icon"]}>
+                <svg viewBox="0 0 24 24" className={styles["icon-svg"]}>
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                  <path d="m12.5 7-1 1v5l3.25 1.95.75-1.23-2.5-1.48V8z"/>
+                </svg>
+              </div>
+              <div className={styles["contact-content"]}>
+                <h3>Kada galite su mumis susisiekti!</h3>
+                <div className={styles["hours-schedule"]}>
+                  <div className={styles["schedule-item"]}>
+                    <span className={styles["schedule-days"]}>Pirmadienį - Penktadienį:</span>
+                    <span className={styles["schedule-time"]}>9:00 - 19:00</span>
+                  </div>
+                  <div className={styles["schedule-item"]}>
+                    <span className={styles["schedule-days"]}>Šeštadienį:</span>
+                    <span className={styles["schedule-time"]}>10:00 - 16:00</span>
+                  </div>
+                  <div className={styles["schedule-item"]}>
+                    <span className={styles["schedule-days"]}>Sekmadienį:</span>
+                    <span className={styles["schedule-time"]}>Neatsiliepiam</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles["map-section"]}>
+        <div className={styles["map-container"]}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72411.55078308374!2d25.240033699999997!3d54.68916515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94140f33be13%3A0xf4988d481b143d21!2sVilnius%2C%20Lithuania!5e0!3m2!1sen!2sus!4v1642000000000!5m2!1sen!2sus"
+            width="100%"
+            height="400"
+            style={{ border: 0, borderRadius: '16px' }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Vilnius Map"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Contacts;

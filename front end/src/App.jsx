@@ -9,6 +9,9 @@ import { useState, useRef, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import Providers from './Components/Providers/Providers.jsx';
 import Confirm from './Components/general/Confirm.jsx';
+import Contacts from './Components/hamburger-menu/contacts/Contacts.jsx';
+import FAQ from './Components/hamburger-menu/faq/FAQ.jsx';
+import AboutUs from './Components/hamburger-menu/about-us/AboutUs.jsx';
 
 
 ///////////  APP ///////////////////////////////////////////////
@@ -24,20 +27,21 @@ function App() {
       <Routes>
         <Route path="/" element={<div>Yoga Website Home - Updated</div>} />
 
-        <Route path="/meal_calculator" element={<div>Meal Calculator</div>} />
-        <Route path="/tdee_calculator" element={<div>TDEE Calculator</div>} />
-        <Route path="/bmi_calculator" element={<div>BMI Calculator</div>} />
-        <Route path="/bodyfat_calculator" element={<div>Body Fat Calculator</div>} />
-        <Route path="/calorie_burn" element={<div>Calorie Burn Calculator</div>} />
-        <Route path="/sleep_calculator" element={<div>Sleep Calculator</div>} />
+        {/* Classes Routes */}
+        <Route path="/tvarkaratis" element={<div>Tvarkaraštis</div>} />
+        <Route path="/kainos" element={<div>Kainos</div>} />
+        <Route path="/uzsakyti-vieta" element={<div>Užsakyti vietą</div>} />
 
-        <Route path="/recipe" element={<div>Recipes</div>} />
-        <Route path="/products" element={<div>Products</div>} />
+        {/* Discover Routes */}
+        <Route path="/ramubes-kampelis" element={<div>Ramybės kampelis</div>} />
+        <Route path="/pozos" element={<div>Pozos</div>} />
+        <Route path="/zaidimai" element={<div>Žaidimai</div>} />
+        <Route path="/mini-srautai" element={<div>Mini srautai (istorijos)</div>} />
 
-        <Route path="/aboutus" element={<div>About Us</div>} />
-
-        <Route path="/profile" element={<div>Profile</div>} />
-        <Route path="/admin" element={<div>Admin</div>} />
+        {/* Hamburger Menu Routes */}
+        <Route path="/apie-mus" element={<AboutUs />} />
+        <Route path="/duk" element={<FAQ />} />
+        <Route path="/kontaktai" element={<Contacts />} />
 
       </Routes>
     </Providers>
